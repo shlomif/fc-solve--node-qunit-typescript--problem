@@ -1,5 +1,5 @@
 /// <reference path="typings/index.d.ts" />
-define("web-fc-solve-tests--fcs-validate", ["require", "exports", "fcs-validate"], function (require, exports, fcs_validate_1) {
+define(["require", "exports"], function (require, exports) {
     "use strict";
     function test_fcs_validate() {
         console.log("spikeymikey");
