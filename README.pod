@@ -1,0 +1,34 @@
+=encoding utf8
+
+=head1 About
+
+This is a repository to reproduce a Node.js / require.js / TypeScript / QUnit
+related problem that I ran into while working on the fc-solve site.
+
+I am getting this output:
+
+    shlomif[fcs]:$trunk/fc-solve/site/wml/repo$ bash -x run-me.sh
+    + node test-code.js
+    /home/shlomif/progs/freecell/git/fc-solve/fc-solve/site/wml/repo/test-code.js:14
+                    test_valid.test_fcs_validate();
+                              ^
+
+    TypeError: Cannot read property 'test_fcs_validate' of undefined
+        at /home/shlomif/progs/freecell/git/fc-solve/fc-solve/site/wml/repo/test-code.js:14:27
+        at Object.context.execCb (/home/shlomif/node_modules/requirejs/bin/r.js:1943:33)
+        at Object.Module.check (/home/shlomif/node_modules/requirejs/bin/r.js:1131:51)
+        at Object.Module.enable (/home/shlomif/node_modules/requirejs/bin/r.js:1423:22)
+        at Object.Module.init (/home/shlomif/node_modules/requirejs/bin/r.js:1036:26)
+        at null._onTimeout (/home/shlomif/node_modules/requirejs/bin/r.js:1707:36)
+        at Timer.listOnTimeout (timers.js:92:15)
+    shlomif[fcs]:$trunk/fc-solve/site/wml/repo$
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is Copyright (c) 2013 by Shlomi Fish.
+
+This is free software, licensed under:
+
+  The MIT (X11) License
+
+=cut
